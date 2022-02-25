@@ -1,37 +1,37 @@
 /* 全局字体自定义 */
-body {
+/* body {
     font-family: 'Noto Serif SC', serif;
     font-size: 1rem;
-}
+} */
 /* 局部字体自定义 */ 
 #articleContent > p { 
     font-family: 'ZCOOL XiaoWei', serif; 
-    font-size: 1.5rem; 
+    font-size: 1rem; 
 } 
 #articleContent > ol { 
     font-family: 'ZCOOL XiaoWei', serif; 
-    font-size: 1.5rem; 
+    font-size: 1rem; 
 } 
 #articleContent > ul { 
     font-family: 'ZCOOL XiaoWei', serif; 
-    font-size: 1.5rem; 
+    font-size: 1rem; 
 } 
 #articleContent > blockquote { 
     font-family: 'ZCOOL XiaoWei', serif; 
-    font-size: 1.5rem; 
+    font-size: 1rem; 
 } 
 #articleContent > p > code { 
     font-family: 'ZCOOL XiaoWei', serif; 
-    font-size: 1.5rem; 
+    font-size: 1rem; 
 } 
 
 #articleContent > ol > li > ul > li > code { 
     font-family: 'ZCOOL XiaoWei', serif; 
-    font-size: 1.5rem; 
+    font-size: 1rem; 
 } 
 #articleContent > table { 
     font-family: 'ZCOOL XiaoWei', serif; 
-    font-size: 1.5rem; 
+    font-size: 1rem; 
 } 
 #articleContent > div > pre > code { 
     font-family: 'JetBrains Mono', monospace; 
