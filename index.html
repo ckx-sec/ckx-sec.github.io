@@ -34,10 +34,24 @@
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
+    
 
+                <body>
+                    <script type="text/javascript"> //只在桌面版网页启用特效 
+                        var windowWidth = $(window).width();
+                        if (windowWidth > 768) {
+                            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+                        } 
+                    </script>
+                    <canvas class="fireworks"
+                        style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+                    <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+                    <script type="text/javascript" src="/js/fireworks.js"></script>
+                    <script
+                        type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "⛄️赶快点回来 😭", clearTimeout(st)) : (document.title = "⛄️鸭，被你发现啦 ❄️", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>
 
-<body>
-    <header class="navbar-fixed">
+                    <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
@@ -306,7 +320,7 @@
 
 </header>
 
-    
+                        
 <style>
     .carousel-control {
         width: 45px;
@@ -507,7 +521,7 @@
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+            北国风光，千里冰封，万里雪飘
         </div>
     </div>
 </div>
@@ -658,7 +672,7 @@ CMD命
 
 
 
-    <footer class="page-footer bg-color">
+                            <footer class="page-footer bg-color">
     
         <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
 <style>
@@ -776,7 +790,7 @@ CMD命
 <div class="progress-bar"></div>
 
 
-    <!-- 搜索遮罩框 -->
+                                <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
@@ -880,7 +894,7 @@ $(function () {
 });
 </script>
 
-    <!-- 回到顶部按钮 -->
+                                    <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
         <i class="fas fa-arrow-up"></i>
@@ -888,32 +902,43 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+                                        <script
+                                            src="/libs/materialize/materialize.min.js"></script>
+                                        <script
+                                            src="/libs/masonry/masonry.pkgd.min.js"></script>
+                                        <script
+                                            src="/libs/aos/aos.js"></script>
+                                        <script
+                                            src="/libs/scrollprogress/scrollProgress.min.js"></script>
+                                        <script
+                                            src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+                                        <script
+                                            src="/js/matery.js"></script>
 
-    
+                                        
 
-    
+                                                
 
-    <!-- 雪花特效 -->
-    
+                                                        <!-- 雪花特效 -->
+                                                        
 
-    <!-- 鼠标星星特效 -->
-    
+                                                                <!-- 鼠标星星特效 -->
+                                                                
 
-     
-        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/libs/others/TencentCaptcha.js"></script>
-        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
-    
+                                                                        
+                                                                            <script
+                                                                                src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+                                                                            <script
+                                                                                src="/libs/others/TencentCaptcha.js"></script>
+                                                                            <button id="TencentCaptcha"
+                                                                                data-appid="xxxxxxxxxx"
+                                                                                data-cbfn="callback" type="button"
+                                                                                hidden></button>
+                                                                            
 
-    <!-- Baidu Analytics -->
+                                                                                <!-- Baidu Analytics -->
 
-    <!-- Baidu Push -->
+                                                                                    <!-- Baidu Push -->
 
 <script>
     (function () {
@@ -929,27 +954,31 @@ $(function () {
     })();
 </script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
+                                                                                        
+                                                                                            <script
+                                                                                                src="/libs/others/clicklove.js"
+                                                                                                async="async"></script>
+                                                                                            
+                                                                                                
 
-    
+                                                                                                        
 
-    
+                                                                                                                
 
-    <!--腾讯兔小巢-->
-    
-    
+                                                                                                                        <!--腾讯兔小巢-->
+                                                                                                                        
+                                                                                                                                
 
-    
+                                                                                                                                        
 
-    
+                                                                                                                                                    
 
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
+                                                                                                                                                            
+                                                                                                                                                                <script
+                                                                                                                                                                    src="/libs/instantpage/instantpage.js"
+                                                                                                                                                                    type="module"></script>
+                                                                                                                                                                
 
-</body>
+                <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
