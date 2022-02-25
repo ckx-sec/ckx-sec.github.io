@@ -1,10 +1,10 @@
-/* 全局字体自定义 */
-/* body {
+/* 全局字体自定义
+body {
     font-family: 'Noto Serif SC', serif;
     font-size: 1rem;
-} */
+}
 /* 局部字体自定义 */ 
-#articleContent > p { 
+/* #articleContent > p { 
     font-family: 'ZCOOL XiaoWei', serif; 
     font-size: 1rem; 
 } 
@@ -32,7 +32,7 @@
 #articleContent > table { 
     font-family: 'ZCOOL XiaoWei', serif; 
     font-size: 1rem; 
-} 
+}  */ 
 #articleContent > div > pre > code { 
     font-family: 'JetBrains Mono', monospace; 
 }
