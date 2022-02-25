@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2022/02/25/hello-world/"/>
+      <url>/2022/02/25/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PS3 </tag>
+            
+            <tag> Games </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>内网渗透</title>
+      <link href="/2021/12/16/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F/"/>
+      <url>/2021/12/16/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F/</url>
+      
+        <content type="html"><![CDATA[<h2 id="内网渗透"><a href="#内网渗透" class="headerlink" title="内网渗透"></a>内网渗透</h2><h4 id="渗透流程"><a href="#渗透流程" class="headerlink" title="渗透流程"></a>渗透流程</h4><p>后台权限</p><p>webshell权限</p><p>服务器权限</p><h4 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h4><h5 id="权限划分"><a href="#权限划分" class="headerlink" title="权限划分"></a>权限划分</h5><p>Windows :SYSTEM Administrator User</p><p>Linux:root user</p><h5 id="webshell定义"><a href="#webshell定义" class="headerlink" title="webshell定义"></a>webshell定义</h5><p>对web中的文件拥有增删改查权限</p><h5 id="CMD命令"><a href="#CMD命令" class="headerlink" title="CMD命令"></a>CMD命令</h5><p> whoami &#x2F;priv 查看权限列表</p><p>net命令</p><pre><code>用户操作net usernet user aaanet user aaa 123456net user aaa /delnet user aaa 123456 /addnet user aaa /active.yesnet user aaa /active.no用户组操作net localgroup Administrators test /addnet localgroup Administrators test /delnet localgroup Administrators</code></pre><p>tasklist</p><pre><code>tasklist /svctasklist /v</code></pre><p>netstat</p><pre><code>netstat -ano</code></pre><p>nets firewall set opcode disable</p><h5 id="Windows基础知识"><a href="#Windows基础知识" class="headerlink" title="Windows基础知识"></a>Windows基础知识</h5><p>在Windows服务器中默认只允许拥有管理员权限的用户才能登入到计算机中</p><p>共同默认账户Administrator Guest</p><p>Windows默认远程RDP(TermService)3389: tasklist &#x2F;svc-&gt;TermService-&gt;PID</p><h5 id="权限提升"><a href="#权限提升" class="headerlink" title="权限提升"></a>权限提升</h5><p>系统漏洞提权</p><p>不正确配置提权</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PS3 </tag>
+            
+            <tag> Games </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
