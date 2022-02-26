@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>算法学习【二叉树篇】（3）</title>
+      <link href="/2022/02/26/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E3%80%90%E4%BA%8C%E5%8F%89%E6%A0%91%E7%AF%87%E3%80%91%EF%BC%883%EF%BC%89/"/>
+      <url>/2022/02/26/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E3%80%90%E4%BA%8C%E5%8F%89%E6%A0%91%E7%AF%87%E3%80%91%EF%BC%883%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h3 id="翻转二叉树"><a href="#翻转二叉树" class="headerlink" title="翻转二叉树"></a>翻转二叉树</h3><h4 id="1、递归法"><a href="#1、递归法" class="headerlink" title="1、递归法"></a>1、递归法</h4><pre class="line-numbers language-c++"><code class="language-c++">class Solution &#123;public:  TreeNode* invertTree(TreeNode* root)&#123;    if(root==NULL) return root;    swap(root->left,root->right);    invertTree(root->left);    invertTree(root->right);    return root;  &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="2、迭代法"><a href="#2、迭代法" class="headerlink" title="2、迭代法"></a>2、迭代法</h4><p><strong>深度优先遍历</strong></p><p>前序遍历（写的时候中右左）</p><pre class="line-numbers language-c++"><code class="language-c++">class Solution &#123;public:  TreeNode* invertTree(TreeNode* root) &#123;    stack<TreeNode*> st;    if(root==NULL) return root;    st.push(root);    while(!st.empty())&#123;      TreeNode* node = st.top();      st.pop();      swap(node->left,node->right);      if(node->right) st.push(node->right);      if(node->left) st.push(node->left);    &#125;    return root;  &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>后序遍历（写的时候中左右+逆）</p><p><strong>广度优先遍历</strong></p><pre class="line-numbers language-c++"><code class="language-c++">class Solution &#123;public:  TreeNode* invertTree(TreeNode* root)&#123;    queue<TreeNode*> que;    if(root != NULL) que.push(root);    while(!que.empty())&#123;      int size = que.size();      for(int i=0;i<size;i++)&#123;        TreeNode* node = que.front();        que.pop();        swap(node->left,node->right);        if(node->left) que.push(node->left);        if(node->right) que.push(node->right);      &#125;    &#125;    return root;  &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="拓展（中序遍历特殊写法）"><a href="#拓展（中序遍历特殊写法）" class="headerlink" title="拓展（中序遍历特殊写法）"></a>拓展（中序遍历特殊写法）</h4><pre class="line-numbers language-c++"><code class="language-c++">class Solution &#123;public:    TreeNode* invertTree(TreeNode* root) &#123;        if (root == NULL) return root;        invertTree(root->left);         // 左        swap(root->left, root->right);  // 中        invertTree(root->left);         // 注意 这里依然要遍历左孩子，因为中间节点已经翻转了        return root;    &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> programming-learning </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据结构 </tag>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>算法学习【二叉树篇】（2）</title>
       <link href="/2022/02/26/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E3%80%90%E4%BA%8C%E5%8F%89%E6%A0%91%E7%AF%87%E3%80%91%EF%BC%882%EF%BC%89/"/>
       <url>/2022/02/26/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E3%80%90%E4%BA%8C%E5%8F%89%E6%A0%91%E7%AF%87%E3%80%91%EF%BC%882%EF%BC%89/</url>
