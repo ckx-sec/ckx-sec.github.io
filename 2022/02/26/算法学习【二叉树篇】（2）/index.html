@@ -487,14 +487,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-26
+                    2022-02-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    230
+                    264
                 </div>
                 
 
@@ -529,31 +529,31 @@
 <li>111.二叉树的最小深度</li>
 </ul>
 <h3 id="二叉树的层次遍历"><a href="#二叉树的层次遍历" class="headerlink" title="二叉树的层次遍历"></a>二叉树的层次遍历</h3><p><strong>这种层序遍历方式就是图论中的广度优先遍历，只不过我们应用在二叉树上。</strong></p>
-<pre class="line-numbers language-c++"><code class="language-c++">class Solution&#123;
-public:
-  vector<vector<int>> levelOrder(TreeNode* root) &#123;
-    queue<TreeNode*> que;
-    vector<vector<int>> result;
-    if(root!=NULL) que.push(root);
-    while(!que.empty())&#123;
-      int size = que.size();
-      vector<int> vec;
-      for(int i=0;i<size;i++)&#123;
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+  vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">>></span> <span class="token function">levelOrder</span><span class="token punctuation">(</span>TreeNode<span class="token operator">*</span> root<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    queue<span class="token operator">&lt;</span>TreeNode<span class="token operator">*</span><span class="token operator">></span> que<span class="token punctuation">;</span>
+    vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">>></span> result<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>root<span class="token operator">!=</span><span class="token constant">NULL</span><span class="token punctuation">)</span> que<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token operator">!</span>que<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+      <span class="token keyword">int</span> size <span class="token operator">=</span> que<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> vec<span class="token punctuation">;</span>
+      <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>size<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         
-        TreeNode* node = que.front();
-        que.pop();
-        vec.push_back(node->val);
-        if(node->left) que.push(node->left);
-        if(node->right) que.push(node->right);
-      &#125;
-      result.push_back(vec);
-    &#125;
-    return result;
-  &#125;
-&#125;;
+        TreeNode<span class="token operator">*</span> node <span class="token operator">=</span> que<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        que<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        vec<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>node<span class="token operator">-</span><span class="token operator">></span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token operator">-</span><span class="token operator">></span>left<span class="token punctuation">)</span> que<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>node<span class="token operator">-</span><span class="token operator">></span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token operator">-</span><span class="token operator">></span>right<span class="token punctuation">)</span> que<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>node<span class="token operator">-</span><span class="token operator">></span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+      result<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>vec<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>如果是从底向上遍历，则添加一行</p>
-<pre class="line-numbers language-c++"><code class="language-c++">reverse(result.begin(),result.end());
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token function">reverse</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>result<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
                 
@@ -802,19 +802,19 @@ public:
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/02/26/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E3%80%90%E4%BA%8C%E5%8F%89%E6%A0%91%E7%AF%87%E3%80%91%EF%BC%883%EF%BC%89/">
+                <a href="/2022/02/26/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E3%80%90%E4%BA%8C%E5%8F%89%E6%A0%91%E7%AF%87%E3%80%91%EF%BC%884%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="算法学习【二叉树篇】（3）">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="算法学习【二叉树篇】（4）">
                         
-                        <span class="card-title">算法学习【二叉树篇】（3）</span>
+                        <span class="card-title">算法学习【二叉树篇】（4）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            翻转二叉树，对称二叉树、二叉树的最小最大深度、求节点个数
+                            二叉树层次遍历
                         
                     </div>
                     <div class="publish-info">
